@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function downloadexe(){
-	visit("download/MAV.exe",true)
+	visit("https://www.mediafire.com/file/2ikwt1bsw53o83d/MAV.exe/file",true)
 }
 
 function downloadapk(){
