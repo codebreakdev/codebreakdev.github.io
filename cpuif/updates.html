@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta property="og:title" content="CPUIF" />
+    <meta property="og:description" content="System Information Software" />
+    <meta property="og:type" content="Software" />
+    <meta property="og:url" content="https://codebreak.site/cpuif/index.php" />
+    <meta property="og:image" content="https://codebreak.site/cpuif/img/screenshoot.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Windows 11 Compatibility Checker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CPU-IF</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        function download(){
+            visit("download/CPUIF.exe",true);
+        }
+
+        function visit(address,blank){
+            var target;
+            if (blank) {
+                target = "_blank";
+            } else {
+                target = "_self";
+            }
+            window.open(address, target);
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div style="cursor:pointer;font-family: rubik, serif;display: inline-block" onclick="visit('index.php',false)">CPU-IF</div>
+    </div>
+
+</header>
+
+<div class="container" style="height: 100%;padding-bottom: 30px">
+    
+
+
+    <div class="font-large" style="padding-top: 20px;">What's new ? </div>
+
+            <div style="text-align: left;">
+                <p><b>Update 1.2 (02 Dec 2021)</b></p>    
+                <ul>
+                    <li> add icon</li>
+                    <li> add OS install date </li>
+                    <li> add bios release date </li>
+                    <li> add genuine windows </li>
+                </ul>
+            </div>
+
+            <div style="text-align: left;">
+                <p><b>Update 1.1 (27 Nov 2021)</b></p>    
+                <ul>
+                    <li> add processor info </li>
+                    <li> add mainboard info </li>
+                    <li> add graphics info </li>
+                    <li> add OS info </li>
+                    <li> add storage info </li>
+                    <li> add memory info </li>
+                </ul>
+            </div>
+
+</div>
+
+
+
+
+
+<footer class=" font-white-color font-small" style="position:fixed;bottom:0;width: 100%;text-align: center;">
+    Copyright &copy; <?php echo date("Y") ?> misael. All Rights Reserved.
+</footer>
+</body>
+</html>

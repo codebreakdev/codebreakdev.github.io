@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta property="og:title" content="MAV" />
+    <meta property="og:description" content="Anti Malware, Junk Cleaner and Speed Booster" />
+    <meta property="og:type" content="Software" />
+    <meta property="og:url" content="http://codebreakdev.github.io/" />
+    <meta property="og:image" content="http://codebreakdev.github.io/mav/img/cover.png" />
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Mav is a Anti-Malware software and Junk Cleaner">
+    <meta name="keywords" content="mav, antivirus, antimalware, mav antimalware, mav anti-malware,free antivirus, malware, ransomware, trojan, worm, rat, backdoor, macro, antivirus lokal indonesia, antivirus indonesia">
+    <meta name="author" content="misael">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>mav anti-malware</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <link href='css/style.css' rel='stylesheet'>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body class="bg-green">
+
+<header>
+    <div class="container">
+        <nav>
+            <ul class="nav">
+                <li id="navicon"></li>
+                <li>Home</li>
+                <li>Donate</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="billboard">
+    <div style="background-color: rgba(0,0,0,0.5)">
+        <div class="container font-white-color">
+            <div style="padding-top: 80px;padding-bottom: 100px;text-align: center">
+                <div style="font-size: 40px">Protect yourself against Malware</div>
+                <div class="font-large">
+                    Don't let malware and viruses steal and lock your data. let's exterminate them.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue font-white-color">
+    <div class="container" style="display: flex;flex-wrap: wrap-reverse;justify-content: center">
+        <div>
+            <div class="excellent_features">
+                <div style="flex: 15% 15%;padding: 4px">
+                    <img src="img/shield.png" width="50">
+                </div>
+                <div style="flex: 85%;padding: 5px">
+                    <div class="font-large">How mav protection works ?</div>
+                    <div class="font-middle" >Our technology monitors every running application on your systems and take action if a process is malicious.</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="excellent_features">
+                <div style="flex: 15% 15%;padding: 4px">
+                    <img src="img/cleaner.png" width="50">
+                </div>
+                <div style="flex: 85%;padding: 5px">
+                    <div class="font-large">How mav junk cleaner works ?</div>
+                    <div class="font-middle" > Our technology removes unused files on your system which can reduce free storage space.</div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="padding-top: 50px;padding-bottom: 50px" class="bg-white" >
+    <div class="container font-dark-color product" style="text-align: center">
+
+
+
+        <div>
+            <img src="img/pc.png" height="150">
+            <div style="padding: 20px;margin-top: 8px;border-bottom: 1px dashed #ccc">
+                <div class="font-small">Version : <?php echo $hit_count = @file_get_contents('download/appver.txt');?></div>
+                <div>
+                    <button class="btn" style="margin-top: 10px" id="exe">
+                        <img src="img/windows.png" height="30" style="vertical-align: middle"> Download for Windows
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <img src="img/mobile.png" height="150">
+            <div style="padding: 20px;margin-top: 8px;border-bottom: 1px dashed #ccc">
+                <div class="font-small">Version : 1.3.10</div>
+                <div>
+                    <button class="btn" style="margin-top: 10px" id="apk">
+                        <img src="img/playstore.png" height="30" style="vertical-align: middle"> Get it on Playstore
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="bg-white font-white-color">
+    <div class=" container bg-dark blockstatus">
+        <div>
+
+
+
+            <div>Total blocked site <br> (Ads, Porn, Phising etc)</div>
+            <div class="font-very-large">
+                <b><?php echo number_format(@file_get_contents('download/wbl.txt'),0);?></b>
+            </div>
+        </div>
+        <div>
+            <div>Total blocked malware <br> (Ransomeware, Trojan, Backdoor etc)</div>
+            <div class="font-very-large">
+                <b><?php echo number_format(@file_get_contents('download/virdef.txt'),0);?></b>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white font-white-color">
+    <div class="bg-blue container titlefeature">
+        <div class="font-large">We offer variety of features</div>
+    </div>
+</div>
+
+
+
+<div class="bg-white font-dark-color">
+    <div class="container">
+        <div class="content feature">
+
+            <table id="tablefeature" cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <th width="50%"></th>
+                    <th><img src="img/windows.png" width="50"></th>
+                    <th><img src="img/android.png" width="50"></th>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <div>
+                            <button onclick="downloadexe()" class="btn-border" style="margin-top: 10px"> Free Download </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <button onclick="downloadapk()" class="btn-border" style="margin-top: 10px"> Free Download  </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Realtime Protection</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/yes.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Junk Cleaner</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>USB Scanner</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Browsing Protection</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Speed Booster / Power Optimizer</td>
+                    <td><img src="img/no.png" width="30"></td>
+                    <td><img src="img/yes.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Anti-Thief</td>
+                    <td><img src="img/no.png" width="30"></td>
+                    <td><img src="img/yes.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Uninstall Manager / Apps Manager</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/yes.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Apps  Backup</td>
+                    <td><img src="img/no.png" width="30"></td>
+                    <td><img src="img/yes.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Service Manager</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Firewall Manager</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Process Manager</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Startup Manager</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+                <tr>
+                    <td>Task Scheduler</td>
+                    <td><img src="img/yes.png" width="30"></td>
+                    <td><img src="img/no.png" width="30"></td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="bg-white font-white-color">
+    <div class="bg-blue container titlerelease">
+        <div class="font-large">Log Releases</div>
+    </div>
+</div>
+
+<div class="bg-white font-dark-color">
+    <div class="container"  style="padding-bottom: 10px">
+
+        <div class="content logrel">
+            <div>
+                <div>
+                    <div class="font-large" style="display:inline-block;margin:4px 4px 9px 4px;padding: 5px 5px 0 5px;border-left:4px solid #333;background-color:#ccc">
+                        Windows
+                    </div>
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.3.3 (14 Dec 2021) </div>
+                    <div>+ Small improvements</div>               
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.3.2 (13 Dec 2021) </div>
+                    <div>+ Small improvements</div>               
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.3.1 (12 Dec 2021) </div>
+                    <div>+ Fixed issue : monitoring process and windows explorer not working</div>
+                    <div>+ Fixed issue : file system watcher not working</div>  
+                    <div>+ Improve Junk Cleaner</div>                 
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.2 (10 Dec 2021) </div>
+                    <div>+ Redesign UI</div>
+                    <div>+ Remove Performance Monitor</div>
+                    <div>+ Add virus signature by user</div>
+                    <div>+ Improve Junk Cleaner</div>
+                    <div>+ Improve Firewall Manager</div>
+                    <div>+ Improve Uninstall Manager</div>
+                   
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.1 </div>
+                    <div>+ Adding 165.335 blacklist site</div>
+                    <div>+ Small Recoveries</div>
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.2.0 </div>
+		            <div>+ Adding 501 database</div>
+                    <div>+ Adding 121.739 blacklist site</div>
+                    <div>+ Adding new feature Mav-AI<br>
+                        &nbsp;&nbsp; <span class="font-small">(help detect new viruses that have not been recognized)</span></div>
+                    <div>+ Adding ui setting</div>
+                    <div>+ Bug Fixes</div>
+
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.1.0 </div>
+                    <div>+ Added Junk cleaner</div>
+                    <div>+ Bug Fixes</div>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+                    <div class="font-large" style="display:inline-block;margin:4px 4px 9px 4px;padding: 5px 5px 0 5px;border-left:4px solid #333;background-color:#ccc">
+                        Android
+                    </div>
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.3.10 (15 Mar 2022) </div>
+                    <div>+ Adding new feature "Power Optimizer"</div>
+                    <div>+ Small improvements</div>
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.3.8 (4 Mar 2022) </div>
+                    <div>+ Adding new feature "Apps Backup"</div>
+                    <div>+ Small improvements</div>
+                </div>
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.3.6 (27 Feb 2022) </div>
+                    <div>+ Support Android 9 and up</div>
+                    <div>+ Small improvements</div>
+                    <div>+ Remove Speed Booster and Junk cleaner</div>
+                </div>
+
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large"> Update : 1.3 </div>
+                    <div>+ Adding 53 database</div>
+                    <div>+ Adding new feature "Anti thief"</div>
+                    <div>+ Redesign UI</div>
+                    <div>+ Improve cleaner feature</div>
+                    <div>+ Improve booster feature</div>
+                    <div>+ Remove flash light feature</div>
+                </div>
+
+
+                <div class="font-middle" style="line-height: 1.5;margin-bottom: 5px;padding: 0 5px 5px 5px">
+                    <div class="font-large">Update : 1.2f</div>
+                    <div>+ Addition database 153 new viruses</div>
+                    <div>+ Added flashlight feature</div>
+                    <div>+ Widgetbar improvements</div>
+                    <div>+ Bug fixes</div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+<footer class="bg-dark font-white-color">
+    <div class="container" style="padding: 10px 0 10px 0;text-align: center">
+        <div style="padding: 5px">
+            <span class="font-middle">Copyright &copy; 2022 Misael. All Right Reserved.</span>
+        </div>
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>

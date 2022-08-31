@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta property="og:title" content="Image Converter" />
+    <meta property="og:description" content="Easy convert & resize your photo" />
+    <meta property="og:type" content="Software" />
+    <meta property="og:url" content="https://codebreak.site/meewu/index.php" />
+    <meta property="og:image" content="https://codebreak.site/meewu/img/bg.jpg" />
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Easy convert & resize your photo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Converter</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        function download(){
+            visit("download/ImageConverter.exe",true);
+        }
+
+        function visit(address,blank){
+            var target;
+            if (blank) {
+                target = "_blank";
+            } else {
+                target = "_self";
+            }
+            window.open(address, target);
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div style="font-family: rubik, serif;display: inline-block">Image Converter</div>
+    </div>
+
+</header>
+
+<div class="container" style="height: 100%;padding-bottom: 30px">
+        <div class="bg-white font-white-dark" align="center">
+            <img src="img/screenshoot.png" class="product">
+        </div>
+
+        <div class="desc bg-white font-dark-color" style="max-width: 400px; margin: auto;text-align: center">
+            <div style="font-family: rubik;font-size: 30px">Easy Convert Your Photos,
+            Free & Always will be</div>
+            <button onclick="download()" class="btn" style="margin-top: 10px" id="apk">
+                <img src="img/windows.png" width="30" style="vertical-align: middle"> Download for Windows
+            </button>
+            <p class="font-small" style="padding: 8px">
+                Image Converter is an app that converts images from one format to another and / or reduces the image size.
+                Image Converter supports image conversion to JPG, PNG, GIF, BMP and TIFF formats.
+            </p>
+            <div style="margin-top: 10px">
+                <div class="font-large">Minimum OS</div>
+                <div class="font-small">Windows 7</div>
+            </div>
+
+            <div style="margin-top: 10px">
+                <div class="font-large">System Requirements</div>
+                <div class="font-small">.NET Framework 4.8</div>
+                <div>
+                    <a href="https://go.microsoft.com/fwlink/?linkid=2088631" style="font-size: 10px; background-color: #3498db; padding: 2px 4px; border-radius: 2px; text-decoration: none;color: #ecf0f1;">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+<footer class=" font-white-color font-small" style="width: 100%;text-align: center;">
+    Copyright &copy; <?php echo date("Y") ?> misael. All Rights Reserved.
+</footer>
+</body>
+</html>
