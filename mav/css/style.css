@@ -259,3 +259,17 @@ header{
     transform: scale(1.2);
 
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+  }
+  
+  /* Define the style for the grid items */
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
