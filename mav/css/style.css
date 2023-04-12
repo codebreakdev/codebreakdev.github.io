@@ -124,7 +124,7 @@ header{
 .btn{
     border: 0;
     outline: none;
-    background-image: linear-gradient(#081B22, #045858);
+    background-image: linear-gradient(#045858, #081B22);
     background-color: #081B22;
     padding: 8px 10px;
     border-radius: 8px;
@@ -136,7 +136,8 @@ header{
 }
 
 .btn:hover{
-    background-image: linear-gradient(#045858, #081B22);
+    background-image: linear-gradient(#081B22, #045858);
+    
     background-color: #081B22;
 
 }
@@ -272,4 +273,14 @@ header{
     padding: 20px;
     text-align: center;
     font-size: 30px;
+}
+
+.rect_num{
+    margin-right: 10px;background-color: white; width:10px; height: 10px;display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+    .rect_num{
+        display: none;
+    }
 }
