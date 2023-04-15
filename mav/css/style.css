@@ -236,14 +236,11 @@ header{
 
 }
 
+
+
 #tablefeature tr td:not(:first-child){
     text-align: center;
    
-}
-
-#tablefeature tr:not(:nth-child(1)):not(:nth-child(2)):hover{
-    background-color: #3498DB;
-    color:#fff;
 }
 
 .btn-border{
@@ -275,12 +272,3 @@ header{
     font-size: 30px;
 }
 
-.rect_num{
-    margin-right: 10px;background-color: white; width:10px; height: 10px;display: inline-block;
-}
-
-@media screen and (max-width: 1000px) {
-    .rect_num{
-        display: none;
-    }
-}
