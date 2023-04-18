@@ -47,7 +47,7 @@ function downloadexe(){
 }
 
 function downloadapk(){
-	visit("https://play.google.com/store/apps/details?id=com.misael.cleanzone",true);
+	visit("https://play.google.com/store/apps/details?id=com.codebreakdev.cleanzone",true);
 }
 
 
