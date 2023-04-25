@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 
-function downloadexe(){
-	visit("https://www.mediafire.com/file/2ikwt1bsw53o83d/MAV.exe/file",true)
-}
 
 function downloadapk(){
 	visit("https://play.google.com/store/apps/details?id=com.codebreakdev.cleanzone",true);
