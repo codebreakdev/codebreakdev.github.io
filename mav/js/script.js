@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function downloadapk(){
-	visit("https://play.google.com/store/apps/details?id=com.codebreakdev.cleanzone",true);
+	visit("https://www.amazon.com/gp/product/B0C5G71BWV",true);
 }
 
 
